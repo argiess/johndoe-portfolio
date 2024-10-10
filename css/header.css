@@ -1,0 +1,54 @@
+@import url(./style.css);
+
+.header{
+    position: fixed;
+    top: 0;
+	width: 100%;
+    max-height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color1);
+	padding: 2.5rem 6%;
+    z-index: 100;
+}
+
+.header .title a{
+    font-family: var(--font2);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+	border-bottom: 1.5px solid var(--color3);
+}
+
+.navbar .list-menu{
+    display: flex;
+    gap: 5rem;
+}
+
+.navbar .list-menu .list-link{
+	color: var(--color2);
+	font-weight: 500;
+	padding-bottom: 1rem;
+	transition: all .1s ease-in-out;
+}
+.navbar .list-menu .list-link:hover{
+	color: var(--color3);
+	border-bottom: 1.5px solid var(--color3);
+}
+
+
+/* BURGER */
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 2.4rem;
+    height: .4rem;
+    margin-top: .4rem;
+    background: var(--color2);
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+}

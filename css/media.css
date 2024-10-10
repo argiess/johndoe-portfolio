@@ -1,0 +1,138 @@
+@import url(./style.css);
+
+/* ----- HEADER MEDIA ----- */
+@media (max-width: 700px) {
+    .header{
+        background: var(--color1);
+    }
+    .header .burger{
+        display: block;
+    }
+    .burger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .burger.active .bar:nth-child(1){
+        background: var(--color2);
+        transform: translateY(8px) rotate(45deg);
+    }
+    .burger.active .bar:nth-child(3){
+        background: var(--color2);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .header .list-menu{
+        position: fixed;
+        top: -200%;
+        left: 0;
+        gap: 0;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background: #1b1b1b;
+        transition: .5s;
+    }
+
+    .navbar .list-menu{
+        gap: 6rem;
+        padding-top: 6.6rem;
+    }
+    .list-menu.active{
+        top: 8rem;
+    }
+}
+/* ----- HEADER MEDIA ----- */
+
+
+
+/* ----- ABOUT MEDIA ----- */
+@media (max-width: 1150px) {
+    #about{
+        flex-direction: column-reverse;
+        gap: 2.5rem;
+    }
+    #about .left h1{
+        text-align: center;
+    }
+    #about .left p{
+        text-align: center;
+    }
+    #about .left .socials{
+        text-align: center;
+    }
+    #about .right img{
+        width: 24rem;
+        height: 24rem;
+        border-radius: 50%;
+        border-color: var(--color3);
+        box-shadow: 0 0 10px var(--color3);
+    }
+}
+
+@media (max-width: 550px) {
+    #about .right img{
+        width: 18rem;
+        height: 18rem;
+    }
+    #about .left .job-title{
+        font-size: 2rem;
+    }
+    #about .left p{
+        font-size: 1.3rem;
+    }
+}
+/* ----- ABOUT MEDIA ----- */
+
+
+
+/* ----- JOURNEY MEDIA ----- */
+@media (max-width: 800px) {
+    .journey .div{
+        flex-direction: column;
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .journey .container .box{
+        padding: 2rem;
+    }
+    .journey .container p{
+        font-size: 1.2rem;
+    }
+}
+/* ----- JOURNEY MEDIA ----- */
+
+
+
+/* ----- PROJECTS MEDIA ----- */
+@media(max-width: 430px){
+    #myBtnContainer{
+        text-align: left;
+    }
+    #projects .btn {
+        font-size: 1.3rem;
+    }
+}
+/* ----- PROJECTS MEDIA ----- */
+
+
+
+/* ----- CONTACTS MEDIA ----- */
+@media(max-width: 650px){
+    #contact .contacts{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    #contact .contacts p{
+        text-align: left;
+    }
+    #contact .contacts .left{
+        width: 100%;
+    }
+    #contact .contact-btn{
+        margin: 10.5rem 0 2.5rem;
+    }
+}
+/* ----- CONTACTS MEDIA ----- */
