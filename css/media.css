@@ -122,11 +122,6 @@
 @media(max-width: 650px){
     #contact .contacts{
         flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-    #contact .contacts p{
-        text-align: left;
     }
     #contact .contacts .left{
         width: 100%;
